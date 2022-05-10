@@ -31,7 +31,13 @@
       <p>Hola <span x-text="nombre"></span>, bienvenido a Alpine JS</p>
     </div>
   </div>
-  <script src="./js/main.js"></script>
+  <div class="container">
+    <button type="submit" x-on:click="selectedTab=0">Tab 1</button>
+    <button type="submit"x-on:click="selectedTab=1">Tab 2</button>
+    <button type="submit" x-on:click="selectedTab=2">Tab 3</button>
+    <p x-show="selectedTab===1"></p>
+  </div>
+  <script src="./js/tabApp"></script>
 </body>
 
 </html>
